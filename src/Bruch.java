@@ -3,6 +3,7 @@ public class Bruch {
     private int denominator; // Nenner
 
     public Bruch(int numerator, int denominator) {
+        // Set attributes of "Bruch"
         this.numerator = numerator;
         this.denominator = denominator;
     }
@@ -16,12 +17,14 @@ public class Bruch {
     }
 
     public double toDecimal() {
+        // Return "Bruch" as its decimal value
         double numerator = this.numerator;
         double denominator = this.denominator;
         return numerator / denominator;
     }
 
     public String print() {
+        // Return "Bruch" as text in form of "x / y"
         return this.numerator + " / " + this.denominator;
     }
 
