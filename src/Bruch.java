@@ -32,13 +32,16 @@ public class Bruch {
         // Multiply current object of "Bruch" with another object of "Bruch"
         // and return a new object of "Bruch"
         Bruch multiplicate = new Bruch
-                (this.numerator *= b2.getNumerator(), this.denominator *= b2.getDenominator());
+                (this.numerator * b2.getNumerator(), this.denominator * b2.getDenominator());
         return multiplicate;
     }
 
     public Bruch multiplicate(Bruch b2,  Bruch b3) {
-        // TODO: Multiplizieren Sie den eigenen Bruch mit b2 und b3
-
-        return null;
+        // Multiply current object of "Bruch" with two additonal objects of "Bruch"
+        // and return a new object of "Bruch"
+        Bruch multiplicate = new Bruch
+                (this.numerator * b2.getNumerator() * b3.getNumerator(),
+                        this.denominator * b2.getDenominator() * b3.getDenominator());
+        return multiplicate;
     }
 }
